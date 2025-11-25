@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="50%" style="stop-color:#12122a"/>
+      <stop offset="100%" style="stop-color:#1a1a3a"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5ff"/>
+      <stop offset="100%" style="stop-color:#ff00ff"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#ff8c00"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="smallGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.05" stroke="#00f5ff" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+    <line x1="100" y1="0" x2="100" y2="800"/>
+    <line x1="200" y1="0" x2="200" y2="800"/>
+    <line x1="300" y1="0" x2="300" y2="800"/>
+    <line x1="400" y1="0" x2="400" y2="800"/>
+    <line x1="500" y1="0" x2="500" y2="800"/>
+    <line x1="600" y1="0" x2="600" y2="800"/>
+    <line x1="700" y1="0" x2="700" y2="800"/>
+    <line x1="800" y1="0" x2="800" y2="800"/>
+    <line x1="900" y1="0" x2="900" y2="800"/>
+    <line x1="1000" y1="0" x2="1000" y2="800"/>
+    <line x1="1100" y1="0" x2="1100" y2="800"/>
+  </g>
+  
+  <!-- Glow orbs -->
+  <circle cx="200" cy="200" r="200" fill="#8b5cf6" opacity="0.1"/>
+  <circle cx="1000" cy="600" r="250" fill="#00f5ff" opacity="0.08"/>
+  <circle cx="600" cy="400" r="300" fill="#ff00ff" opacity="0.05"/>
+  
+  <!-- Main title -->
+  <text x="600" y="320" font-family="Arial Black, sans-serif" font-size="180" font-weight="900" text-anchor="middle" fill="url(#textGrad)" filter="url(#glow)">2048</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#a0a0c0">PUZZLE GAME</text>
+  
+  <!-- Play button style -->
+  <rect x="450" y="480" width="300" height="70" rx="35" fill="none" stroke="url(#textGrad)" stroke-width="3" filter="url(#smallGlow)"/>
+  <text x="600" y="528" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#00f5ff">🎮 PLAY NOW</text>
+  
+  <!-- Sample tiles decoration -->
+  <g transform="translate(100, 550)">
+    <rect width="80" height="80" rx="12" fill="#1a3a4a" stroke="#00f5ff" stroke-width="2"/>
+    <text x="40" y="55" font-family="Arial Black, sans-serif" font-size="32" text-anchor="middle" fill="#00f5ff">2</text>
+  </g>
+  
+  <g transform="translate(200, 550)">
+    <rect width="80" height="80" rx="12" fill="#2a3a5a" stroke="#6ee7ff" stroke-width="2"/>
+    <text x="40" y="55" font-family="Arial Black, sans-serif" font-size="32" text-anchor="middle" fill="#6ee7ff">4</text>
+  </g>
+  
+  <g transform="translate(300, 550)">
+    <rect width="80" height="80" rx="12" fill="#3a2a5a" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="40" y="55" font-family="Arial Black, sans-serif" font-size="32" text-anchor="middle" fill="#8b5cf6">8</text>
+  </g>
+  
+  <g transform="translate(820, 550)">
+    <rect width="80" height="80" rx="12" fill="#5a2a4a" stroke="#ff00ff" stroke-width="2"/>
+    <text x="40" y="55" font-family="Arial Black, sans-serif" font-size="28" text-anchor="middle" fill="#ff00ff">32</text>
+  </g>
+  
+  <g transform="translate(920, 550)">
+    <rect width="80" height="80" rx="12" fill="#5a3a1a" stroke="#ffd700" stroke-width="2"/>
+    <text x="40" y="52" font-family="Arial Black, sans-serif" font-size="22" text-anchor="middle" fill="#ffd700">128</text>
+  </g>
+  
+  <g transform="translate(1020, 550)">
+    <rect width="80" height="80" rx="12" fill="url(#textGrad)" stroke="#fff" stroke-width="2"/>
+    <text x="40" y="50" font-family="Arial Black, sans-serif" font-size="18" text-anchor="middle" fill="#fff">2048</text>
+  </g>
+  
+  <!-- Farcaster branding -->
+  <text x="600" y="750" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#606080">Farcaster Mini App</text>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "accountAssociation": {
+    "header": "GANTI_DENGAN_HEADER_DARI_MANIFEST_TOOL",
+    "payload": "GANTI_DENGAN_PAYLOAD_DARI_MANIFEST_TOOL",
+    "signature": "GANTI_DENGAN_SIGNATURE_DARI_MANIFEST_TOOL"
+  },
+  "frame": {
+    "version": "1",
+    "name": "2048 Game",
+    "iconUrl": "https://your-domain.vercel.app/icon.png",
+    "homeUrl": "https://your-domain.vercel.app",
+    "splashImageUrl": "https://your-domain.vercel.app/splash.png",
+    "splashBackgroundColor": "#0f0f23"
+  }
+}
